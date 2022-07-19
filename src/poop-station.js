@@ -1,4 +1,4 @@
-export default class PoopInfo {
+export default class LitterInfo {
   static async getInfo(amount) {
     try {
       const response = await fetch(
