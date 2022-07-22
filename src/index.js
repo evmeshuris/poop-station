@@ -7,17 +7,17 @@ import LitterInfo from "./poop-station";
 $(document).ready(function () {
   $("#rate").click(function (e) {
     e.preventDefault();
-    const amount = $("#amount").val();
-    LitterInfo.getInfo(amount).then(function (newResponse) {
-      showExchangeAmount(newResponse, amount);
+    const amount = $("#cycle_count").val();
+    LitterInfo.getInfo(cycle_count).then(function (newResponse) {
+      showCount(newResponse, cycle_count);
     });
   });
 });
 
-function showExchangeAmount(response, amount) {
+function showCount(response, cycle_count) {
   if (response.result === "success") {
     $("#showAmount").text(
-      `How many time cats did their business ${amount} ${response.target_code}`
+      `How many time cats did their business ${cycle_count} ${response.target_code}`
     );
   } else {
     $(".showErrors").text(`${LitterInfo.error}`);
