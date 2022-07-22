@@ -1,5 +1,5 @@
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import $ from "jquery";
 import LitterInfo from "./poop-station";

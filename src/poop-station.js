@@ -13,3 +13,16 @@ export default class LitterInfo {
     }
   }
 }
+
+var settings = {
+  "url": "https://litterbot.api.theemm.com/get_info",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+    "X-API-Key": "0XqYjqekJL60tVjNWbkvG9PXgcxjtEMpxWeLQ3ba"
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
