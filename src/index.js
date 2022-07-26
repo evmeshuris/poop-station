@@ -23,3 +23,15 @@ function showCount(cycle_count) {
     $(".showErrors").text(`${LitterInfo.error}`);
   }
 }
+
+async function displayCount() {
+  const count = await LitterInfo.getLitterInfo();
+  if (peopleArray !== true) {
+    const output = $("#showCount");
+    $("#showCount").removeClass("hidden");
+    $(output).text("How many time cats did their business");
+    
+  } else {
+    displayError($("#error-ouput"));
+  }
+}
