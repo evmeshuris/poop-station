@@ -2,8 +2,8 @@ import { ApiCall, ErrorHandling } from "./utility.js";
 
 export class LitterInfo {
   static async getLitterInfo() {
-    let url = `https://litterbot.api.theemm.com/get_info`;
-
+    // let url = `https://litterbot.api.theemm.com/get_info`;
+    let url = `https://litterbot.api.theemm.com/get_info/key=${process.env.API_KEY_BING}`;
     const response = await ApiCall.getApi(url);
     const isError = ErrorHandling.handleError(response);
     if (!isError) {

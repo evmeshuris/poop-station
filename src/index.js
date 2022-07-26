@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import $ from "jquery";
 import LitterInfo from "./poop-station.js";
+import { ApiCall, ErrorHandling } from "./utility.js";
 
 $(document).ready(function () {
   $("#showCount").click(function (e) {
@@ -24,14 +25,3 @@ function showCount(cycle_count) {
   }
 }
 
-async function displayCount() {
-  const count = await LitterInfo.getLitterInfo();
-  if (peopleArray !== true) {
-    const output = $("#showCount");
-    $("#showCount").removeClass("hidden");
-    $(output).text("How many time cats did their business");
-    
-  } else {
-    displayError($("#error-ouput"));
-  }
-}
