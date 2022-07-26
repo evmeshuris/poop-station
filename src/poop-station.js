@@ -1,5 +1,5 @@
 export default class LitterInfo {
-  static async getInfo(cycle_count) {
+  static async getInfo() {
     try {
       const response = await fetch(
         `https://litterbot.api.theemm.com/get_info`
