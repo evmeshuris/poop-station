@@ -2,22 +2,50 @@
 
 <head>
   <title>Poop Station</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../src/index.js"></script>
 </head>
 
 <body>
   <div class="container">
     <h1>Poop Station</h1>
-    <p><img src="../img/poop-station.jpeg" alt="Toilet like a spaceship" /></p>
-    <p><img src="../img/gizmo.jpg" alt="Gizmo"/></p>
-    <p><img src="../img/panter.jpg" alt="Panter" /></p>
-    <p><img src="../img/puma.jpg" alt="Panter wants to be a star and advertise Puma Brand" /></p>
-    <button class="myCssClass" id="showCount">Get info</button>
+    <p>
+    <figure><img src="../img/poop-station.jpeg" alt="Toilet like a spaceship" />
+      <figcaption>It is not a spaceship. It is just a toilet</figcaption>
+    </figure>
+    </p>
+    <div class="row">
+      <div class="column">
+        <p>
+        <figure><img src="../img/gizmo.jpeg" alt="Gizmo" />
+          <figcaption>Gizmo</figcaption>
+        </figure>
+        </p>
+      </div>
+      <div class="column">
+        <p>
+        <figure><img src="../img/panter.jpeg" alt="Panter" />
+          <figcaption>Panter</figcaption>
+        </figure>
+        </p>
+      </div>
+      <div class="column">
+        <p>
+        <figure><img src="../img/puma.jpg" alt="Panter Puma Brand"  />
+          <figcaption>Panter wants to be a star and advertise Puma Brand</figcaption>
+        </figure>
+        </p>
+      </div>
+    </div> 
+      <button class="myCssClass" id="get-info">Get info</button>
 
-
-    <div id="cycle_count"></div>
-    <button class="myCssClass" id="clean">Clean Poop Station</button>
-  </div>
+      <div id="show-name"></div>
+      <div id="show-serial"></div>
+      <div id="show-count"></div>
+      <div id="show-drawer"></div>
+      <div id="show-level"></div>
+      <button class="myCssClass" id="clean">Clean Poop Station</button>
+    </div>
 </body>
 
 </html>
-
