@@ -28,10 +28,21 @@ $(document).ready(function(){
     document.getElementById("show-drawer").innerHTML = "Is toilet needs to get clean: " + myArr.is_waste_drawer_full;
     document.getElementById("show-level").innerHTML = "Drawer level: " + myArr.waste_drawer_level;
   });
-
-  // $('#clean').click(function() {
-  //   const myArr = JSON.parse(getInfo());
-  // });
+  
+  $('#clean').click(function() {
+    var settings = {
+      "url": "https://litterbot.api.theemm.com/start_cleaning",
+      "method": "GET",
+      "timeout": 0,
+      "headers": {
+        "X-API-Key": "0XqYjqekJL60tVjNWbkvG9PXgcxjtEMpxWeLQ3ba"
+      },
+    };
+    
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+    });
+  });
 
   function getInfo()  {
     var response =  `{
