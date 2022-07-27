@@ -26,6 +26,7 @@ $(document).ready(function(){
     document.getElementById("show-serial").innerHTML = "Serial number: " + myArr.serial;
     document.getElementById("show-count").innerHTML = "How many times cats did their business: " + myArr.cycle_count;
     document.getElementById("show-drawer").innerHTML = "Is toilet needs to get clean: " + myArr.is_waste_drawer_full;
+    document.getElementById("show-capacity").innerHTML = "Capacity: " + myArr.cycle_capacity;
     document.getElementById("show-level").innerHTML = "Drawer level: " + myArr.waste_drawer_level;
   });
   
