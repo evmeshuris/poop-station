@@ -6,22 +6,11 @@ import $ from "jquery";
 
 $(document).ready(function(){
   
-  // var settings = {
-  //   "url": "https://litterbot.api.theemm.com/get_info",
-  //   "method": "GET",
-  //   "timeout": 0,
-  //   "headers": {
-  //     "X-API-Key": "0XqYjqekJL60tVjNWbkvG9PXgcxjtEMpxWeLQ3ba"
-  //   },
-  // };
-  
-  // $.ajax(settings).done(function (response) {
-  //   alert(response);
-  // });
+
 
   $('#get-info').click(function() {
     const myArr = JSON.parse(getInfo());
-    alert(myArr.name);
+    console.log(myArr);
     document.getElementById("show-name").innerHTML = "Name of the toilet: " + myArr.name;
     document.getElementById("show-serial").innerHTML = "Serial number: " + myArr.serial;
     document.getElementById("show-count").innerHTML = "How many times cats did their business: " + myArr.cycle_count;
@@ -46,16 +35,29 @@ $(document).ready(function(){
   });
 
   function getInfo()  {
-    var response =  `{
-    "name": "Kakahina Station",
-    "serial": "LR3CI451198",
-    "cycle_capacity": 33,
-    "cycle_count": 9,
-    "cycles_after_drawer_full": 0,
-    "is_waste_drawer_full": false,
-    "waste_drawer_level": 27.3
-  }`;
-    return response;
+  //   var response =  `{
+  //   "name": "Kakahina Station",
+  //   "serial": "LR3CI451198",
+  //   "cycle_capacity": 33,
+  //   "cycle_count": 9,
+  //   "cycles_after_drawer_full": 0,
+  //   "is_waste_drawer_full": false,
+  //   "waste_drawer_level": 27.3
+  // }`;
+  //   return response;
+    var settings = {
+      "url": "https://litterbot.api.theemm.com/get_info",
+      "method": "GET",
+      "timeout": 0,
+      "headers": {
+        "X-API-Key": "0XqYjqekJL60tVjNWbkvG9PXgcxjtEMpxWeLQ3ba"
+      },
+    };
+  
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+      return response;
+    });
   }
 });
 

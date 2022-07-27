@@ -89,3 +89,31 @@ figcaption {
   clear: both;
   display: table;
 }
+
+/* .button {
+  background-color: #4CAF50; /* Green */
+  /* border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer; */
+/* } */ */
+.button {
+  background-color: azure;
+}
+
+.button2 {
+  background-color: rgb(222, 240, 250); 
+  color: rgba(3, 28, 103, 0.653); 
+  /* border: 2px solid #787b7c; */
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
