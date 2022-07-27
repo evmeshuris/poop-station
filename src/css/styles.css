@@ -20,10 +20,13 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  /* height: 50%; */
   color: white;
   box-shadow: 2px 2px 4px #000000;
+}
+.toilet {
+  size: 11cm;
 }
 
 .myCssClass {
@@ -66,7 +69,7 @@ figure {
 }
 
 figcaption {
-  background-color: rgb(49, 65, 158);
+  background-color: rgba(3, 28, 103, 0.653);
   color: white;
   font-style: italic;
   text-shadow: 2px 2px 4px #000000;

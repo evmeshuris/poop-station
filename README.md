@@ -3,7 +3,7 @@ https://docs.google.com/document/d/1Nib8R-P1h6R2XV6hJmPLGWstYSP43CtxG1iBe8UddfA/
 
 #### By _**Evgeniya Meshuris**_
 
-#### _This application will using API call will show you information about Litter Robot_
+#### _This application using API call will show you information about Litter Robot_
 
 ## Technologies Used
 
@@ -17,7 +17,7 @@ https://docs.google.com/document/d/1Nib8R-P1h6R2XV6hJmPLGWstYSP43CtxG1iBe8UddfA/
 
 ## Description
 
-_This application will using API call will show you information about Litter Robot_
+_This application using API call will show you information about Litter Robot (how many times used, capacity, is it full). By clicking button Clean the litter robot will start cycling._
 
 ## Setup/Installation Requirements
 
