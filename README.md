@@ -32,7 +32,7 @@ _This application will show you the information about Litter Robot using API cal
 
 ## Known Bugs
 
-* _API Does not work in Chrome from local machine because of CORS_ 
+* _not known_ 
 
 ## License
 
