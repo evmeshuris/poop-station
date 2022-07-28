@@ -25,13 +25,14 @@ _This application will show you the information about Litter Robot using API cal
 * _Clone this repository using the copied URL and the "git clone" command in Terminal_
 * _Create a file named .env in a root directory_
 * _Open .env file. Add API key "API_KEY={your key here}_
+* _Get your API KEY in your account on Letter Robot webpage_
 * _Add .env to your .gitignore file_
 * _Run npm install and run npm start in Terminal in a root directory"_
   
 
 ## Known Bugs
 
-* _Any known issues_ 
+* _API Does not work in Chrome from local machine because of CORS_ 
 
 ## License
 
