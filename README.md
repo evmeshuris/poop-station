@@ -1,4 +1,4 @@
-https://docs.google.com/document/d/1Nib8R-P1h6R2XV6hJmPLGWstYSP43CtxG1iBe8UddfA/edit?usp=sharing
+https://github.com/evmeshuris/capstone.git  
 # _Poop Station_
 
 #### By _**Evgeniya Meshuris**_
