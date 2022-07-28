@@ -1,0 +1,119 @@
+body {
+  background-color: rgb(222, 240, 250);
+  margin: 2cm;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15%;
+}
+ 
+
+h1 {
+  text-align: center;
+  color: rgb(60, 134, 214);
+  text-shadow: 2px 2px 4px #000000;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* height: 50%; */
+  color: white;
+  box-shadow: 2px 2px 4px #000000;
+}
+.toilet {
+  size: 11cm;
+}
+
+.myCssClass {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin: 1cm;
+  background-color: Transparent;
+  cursor: pointer;
+
+  color: #181818;
+  color: rgba(10, 58, 201, 0.653);
+  width: auto;
+
+  padding: 8px 12px;
+  border: none;
+  outline:none;
+  outline:0;
+
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.8);
+}
+
+#show-name, #show-serial, #show-count, #show-drawer, #show-level, #show-capacity {
+  text-align: center;
+  color: rgba(3, 28, 103, 0.653);
+}
+figcaption {
+  text-align: center;
+  color: rgba(3, 28, 103, 0.653);
+}
+figure {
+  /* border: 1px #cccccc solid; */
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: rgba(3, 28, 103, 0.653);
+  color: white;
+  font-style: italic;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 2px;
+  text-align: center;
+  box-shadow: 2px 2px 4px #000000;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* .button {
+  background-color: #4CAF50; /* Green */
+  /* border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer; */
+/* } */ */
+.button {
+  background-color: azure;
+}
+
+.button2 {
+  background-color: rgb(222, 240, 250); 
+  color: rgba(3, 28, 103, 0.653); 
+  /* border: 2px solid #787b7c; */
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
